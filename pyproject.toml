@@ -18,6 +18,9 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent"
 ]
+packages = [
+    { include = "PyListenerTool" }
+]
 
 [tool.poetry.urls]
 "Homepage" = "https://github.com/qiufengcute/PyListenerTool"
@@ -26,9 +29,6 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.7"
-packages = [
-    { include = "PyListenerTool" }
-]
 
 [build-system]
 requires = ["poetry-core"]
