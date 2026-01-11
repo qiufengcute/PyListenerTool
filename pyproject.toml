@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "PyListenerTool"
-version = "1.0.0"
-description = "A lightweight and powerful event listener system for Python classes with built-in documentation generation support. Easily add event-driven programming patterns to your Python classes with decorators and automatic documentation."
+version = "26.01.11"
+description = "A lightweight event listener system for Python classes that auto-generates documentation."
 authors = ["qiufeng <appleidqiufeng@outlook.com>"]
 readme = "README.md"
 license = "MIT"
@@ -9,23 +9,9 @@ keywords = [
     "event-driven",
     "listener",
     "observer-pattern",
-    "event-bus",
-    "decorator",
-    "python3",
-    "async",
-    "documentation",
-    "event-handler",
     "pub-sub",
-    "python-decorators",
-    "event-system",
-    "python-library",
-    "async-programming",
-    "design-patterns",
     "event-management",
-    "callback",
-    "event-documentation",
-    "auto-docs",
-    "threading"
+    "event-documentation"
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -34,9 +20,9 @@ classifiers = [
 ]
 
 [tool.poetry.urls]
-"Homepage" = "https://github.com/qiufengcute/Listener"
-"Repository" = "https://github.com/qiufengcute/Listener"
-"Changelog" = "https://github.com/qiufengcute/Listener/blob/main/CHANGELOG.md"
+"Homepage" = "https://github.com/qiufengcute/PyListenerTool"
+"Repository" = "https://github.com/qiufengcute/PyListenerTool"
+"Changelog" = "https://github.com/qiufengcute/PyListenerTool/blob/main/CHANGELOG.md"
 
 [tool.poetry.dependencies]
 python = "^3.7"

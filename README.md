@@ -4,7 +4,7 @@
 ![PyPI Version](https://img.shields.io/pypi/v/PyListenerTool.svg)
 ![Downloads](https://img.shields.io/pypi/dm/PyListenerTool.svg)
 
-A lightweight and powerful event listener system for Python classes with built-in documentation generation support. Easily add event-driven programming patterns to your Python classes with decorators and automatic documentation.
+A lightweight event listener system for Python classes that auto-generates documentation.
 
 ## 📦 Installation
 ```bash
@@ -171,7 +171,6 @@ Internal methods for documentation generation.
 Analyze a class to extract listener information.
 
 **Returns:** Dict with keys:
-- `has_listener_decorator`: Whether class has @Listener decorator
 - `events`: List of event names found
 - `error`: Any error during extraction
 

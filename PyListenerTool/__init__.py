@@ -5,7 +5,7 @@ import textwrap
 import threading
 from typing import Any, Callable, Type
 
-__version__ = "1.0.0"
+__version__ = "26.01.11"
 
 
 def Listener(cls: Type[Any]):
@@ -260,28 +260,15 @@ def Listener(cls: Type[Any]):
 
 
 def extract_listeners(cls: Type[Any]):
-    result = {"has_listener_decorator": False, "events": [], "error": ""}
+    result = {"events": [], "error": ""}
 
     try:
         source = textwrap.dedent(inspect.getsource(cls))
-    except Exception as e:
-        result["error"] = e
-        return result
-
-    lines = source.strip().split("\n")
-    for line in lines:
-        if line.strip().startswith("@Listener"):
-            result["has_listener_decorator"] = True
-            break
-
-    if not result["has_listener_decorator"]:
-        return result
-
-    try:
         tree = ast.parse(source)
     except Exception as e:
         result["error"] = e
         return result
+
     try:
         for node in ast.walk(tree):
             if isinstance(node, ast.Call):
