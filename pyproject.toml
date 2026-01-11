@@ -26,6 +26,9 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.7"
+packages = [
+    { include = "PyListenerTool" }
+]
 
 [build-system]
 requires = ["poetry-core"]
