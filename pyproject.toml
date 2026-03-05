@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "PyListenerTool"
-version = "26.01.11"
+version = "26.03.05"
 description = "A lightweight event listener system for Python classes that auto-generates documentation."
 authors = ["qiufeng <appleidqiufeng@outlook.com>"]
 readme = "README.md"
