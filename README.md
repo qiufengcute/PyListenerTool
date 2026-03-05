@@ -82,8 +82,8 @@ processor = DataProcessor()
 
 # Async listener
 @processor.on("data_received", is_async=True)
-async def handle_data_async(data, timestamp):
-    await asyncio.sleep(0.1)
+def handle_data_async(data, timestamp):
+    time.sleep(0.1)
     print(f"Async processing: {data} at {timestamp}")
 
 # Error handler
