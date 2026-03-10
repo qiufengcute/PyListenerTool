@@ -249,7 +249,7 @@ def Listener(cls: Type[Any]):
         on_error: Callable[[str], None] | None = None,
     ) -> None:
         def decorator(func: Callable[..., None]):
-            self.addListener(event_name, func, is_async, once)
+            self.addListener(event_name, func, is_async, once, on_error)
             return func
 
         return decorator
